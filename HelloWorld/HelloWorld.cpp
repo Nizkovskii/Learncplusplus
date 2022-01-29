@@ -4,8 +4,15 @@ using namespace std;
 int main() {
 	int a, b, c;
 	cin >> a >> b >> c;
-	cout << max(a, b, c);
-//	if ()
+	if (a >= b && a >= c) {
+		cout << a;
+	}
+	else if (b >= a && b >= c) {
+		cout << b;
+	}
+	else {
+		cout << c;
+	}
 
 	return 0;
 }
